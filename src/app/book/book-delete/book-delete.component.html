@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row col-md-10 offset-1 card card-body delete">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Xóa sách</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2  fw-bold">Tên:</div>
+      <div class="col-sm-10">{{book.title}}</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 fw-bold">Tác giả: </div>
+      <div class="col-sm-10">{{book.author}}</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 fw-bold">Mô tả:</div>
+      <div class="col-sm-10">{{book.description}}</div>
+    </div>
+    <div class="row" style="margin-top: 30px">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10 row">
+        <div class="col-3"><button class="btn-danger" (click)="deleteBook(id)">Xóa sách</button></div>
+      </div>
+    </div>
+  </div>
+</div>

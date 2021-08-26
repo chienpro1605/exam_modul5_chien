@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-2">
+      <h3>Sửa sách</h3>
+    </div>
+  </div>
+  <div class="row">
+    <form [formGroup]="bookForm" (ngSubmit)="updateBook(id)">
+      <div class="col-md-8 offset-2 card card-body">
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label fw-bold">Tên</label>
+          <div class="col-sm-10">
+            <input type="hidden" formControlName="id">
+            <input type="text" formControlName="title" class="form-control">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label fw-bold">Tác giả</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" formControlName="author">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label fw-bold">Mô tả</label>
+          <div class="col-sm-10">
+            <textarea type="text" rows="5" class="form-control" formControlName="description"></textarea>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10 row">
+            <div class="col-md-3">
+              <button type="submit">edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
